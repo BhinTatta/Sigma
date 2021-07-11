@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IdCard Generator</title>
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+    	
+    	<style>
+    .ruet
+    {
+        background-color:#008040;
+        border-bottom: 6px solid #004f27;
+        height:50px;
+        width:100px;
+        color:#ffffff;
+        font-weight: bold;
+        font-size:18px;      
+        text-align:center;
+        border-radius:5px;
+        padding:10px 20px 10px 20px;
+
+
+}
+.ruet:hover
+{
+   
+   background-color: #008040;
+   border-bottom-width: 4px; 
+   
+  
+}
+
+a:link
+{
+  color:#ffffff;
+  text-decoration:none;
+  
+} 
+
+.ruet:active
+{
+    border-bottom-width:1px;
+    background-color: #00a653;
+
+
+} 
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(40,40,40);
+    box-shadow: 5px 5px 5px grey;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: white;
+    background-color: #3F51B5;  
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+
+
+.nav
+{
+   border-radius: 0px;
+   background-color: #3F51B5;
+   border:none;
+}
+
+  .foot
+  {
+          background-color: rgb(40,40,40);
+          padding: 20px;
+          color: white;
+          text-align: center;
+          clear: left;
+          max-width: 100%;
+          margin-top:500px;
+          
+
+
+          
+  }
+
+  .bh
+  {
+      font-size:30px;
+      cursor:pointer;
+      color: white; 
+      margin-left: 20px;
+      padding:5px;
+
+  }
+  .ch
+  {
+     font-size: 25px; 
+     margin-left:15px;
+  }
+  .bh:hover
+  {
+      background-color: black;
+  }
+
+  @media only screen and (max-width:400px)
+  {
+    .ch
+    {
+       font-size:20px;
+       margin-left:2px;
+    }
+  }
+
+
+
+    </style>
+</head>
+<body>
+	<section id="sigma">
+		<div id="sigma1">
+			<h2>BECOME THE ULTIMATE</h2>
+			<h1>SIGMA <STRONG>Σ</STRONG>ALE</h1>
+			<div class="spacer"></div>
+			<h3>FEEL THE <strong>#GRINDSET</strong></h3>
+		</div>
+		
+		<div id="sigma2"><img id="sigma-img" src="sigma.jpg"</div>
+	</section>
+
+	<section id="music">
+			<h1>The Sigma Anthem</h1>		
+		<div id="music1">
+			<audio controls autoplay="autoplay" id="audio">
+			<source src="sigma.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+			</audio>
+		</div>
+	</section>
+	
+	<div class="spacer"></div>
+	
+	<section id="certified">
+		<div id="certified1"><img id="certified-img" src="jerk.jpg"></div>
+		<div id="certified2">
+			<h2>THEY JERK OFF TO PORNOGRAPHY.</h2>
+			<h2>A SIGMA JERKS OFF TO ABSTRACT THOUGHTS OF</h2>
+			<ul>
+				<li>SUCCESS</li>
+				<li>MONEY</li>
+				<li>HUSTLE</li>
+				<li>WINNING</li>
+				<li>BOYS SOMETIMES</li>
+			</ul>
+		</div>
+	</section>
+
+    <section id="main" style="margin-top:100px;">
+		
+	 <div id="main1">
+		 </br></br>
+		 <h2>YOU ARE ONE OF <STRONG>0.02%</STRONG></h2>
+		 </br></br></br>
+		 <h2>GET YOUR SIGMA CARD</h2>
+		 <h3>ISUUED BY </br><strong>WORLD GRINDSET UNION</strong></h3>
+	 </div>
+
+     <div class="container details-all" id="form-main">
+       
+       <div class="column sigma-details">
+         <div class="col-sm-8">
+             
+         <div class="form-group">  
+         <label for="bn"></label>   
+        <form >
+
+			<div class="form-group">
+            <label for="en">Your Name</label>
+			<input id="f-name" type="text" class="form-control" name="ename" placeholder="Your Name" required>
+			</div><br>
+
+			<div class="form-group">
+            <label for="">Inception Of Sigma Life</label>
+			<input id="f-date" type="date" class="form-control" name="dname" placeholder="Your Date Of Birth" required>
+			</div><br>
+			
+			<div class="form-group">
+            <label for="">Favourite Sigma Rule </label>  <!-- ID Number english-->
+			<input id="f-rule" type="text"  class="form-control" name="nid" placeholder="eg.  #435" required>
+			</div><br>
+			
+			<div class="form-group">
+            <label for="">Ability</label>
+			<input id="f-sign" type="text" class="form-control" name="si" placeholder="Eg Charisma (max-length 20) " required maxlength="20">
+			</div><br>
+			
+			
+			<div class="form-group">
+      <label for="">Upload Your Picture</label>
+			<b></b> <input id="f-img" type="file" accept="image/*" name="file" onchange="showPreview(event);" >
+			</div><br><br>
+			
+			
+			<input  class="btn btn-success" name="" value="GENERATE" onClick="valuecard()">
+			</form>
+      </div>
+
+           
+           </div>
+           </div>
+           </div>
+       </section>
+
+	<div class="spacer"></div>
+    <div class="spacer"></div>
+	<div class="spacer"></div>
+
+	<section id="card">
+		<div id="card1">
+			<div id="card-bg">
+				<img id="card-bg-1" src="sigmacard.png">
+				
+				<div id="card-info">
+					<div id="c-name" class="info"></div>
+					<div id="c-date" class="info"></div>
+					<div id="c-rule" class="info"></div>
+					<div id="c-sign" class="info"></div>
+				</div>
+				
+				<div id="c-img"> <img id="c-imgout"> </div>
+			</div>	
+								
+		</div>		
+	</section>
+	
+	<section>
+		<div id="card-output"> <button onClick="download();" >Download</button> </div>
+	</section>
+
+	<div class="spacer"></div>
+    <div class="spacer"></div>
+	<div class="spacer"></div>
+
+
+
+</body>
+</html>
