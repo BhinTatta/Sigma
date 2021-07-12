@@ -246,7 +246,17 @@ strong{
 	margin: 0 0 3vh 0;
 	font-size: 1.2vw;
 	}
+.btn-success:hover, .btn-success:focus {
+	background-color: #F0DB8D;
+	color: black;
+	}
 /*CSS OF CARD AND IT'S DIV....... PROPORTIONS MUST BE PROTECTED*/
+#card{
+	display: none;}
+#card1{
+	max-height: 40vw;
+	overflow: hidden;
+	}
 #card-bg{
 	background-image: url("sigmacard.png");
 	background-repeat: no-repeat;
@@ -288,3 +298,300 @@ strong{
 	min-height: 15vw;
 
 }
+
+/*Ending text*/
+#end-text{
+	border-top: solid 1vh var(--gold);
+	width: 60vw;
+	margin: 0 auto;
+	padding: 2vw 3vw;
+	}
+#end-text h2{
+	color: white;
+	font-size: 1.7vw !important;
+	}
+#end-text h1{
+	color: white;
+	font-size: 2vw !important;
+	}
+#end-text a {
+	color: var(--gold);
+	}
+#end-text strong {
+	color: var(--gold);
+	}
+	
+/*footer*/
+footer{
+	background-color: var(--gold);
+	margin: 4vw 0 0 0;
+	}
+#madeby{
+	color: white;
+	font-size: 2vw !important;
+	margin: 0vw auto;
+	width: 50vw;
+	padding: 1vw 2vw;
+	text-align: center;
+	}
+#madeby h1{
+	font-size: 2vw;}
+#madeby strong{
+	font-size: 2vw;
+	color: black;
+	font-weight: 900;}
+
+/*MEDIA QUERRY--------------------------MEDIA QUERRY*/
+@media only screen and (max-width: 600px){
+.spacer{
+	height: 3vh;
+	}
+#sigma{
+	background-color: black;
+	height: 90vh;
+	}
+#sigma1{
+	font-family: serif;
+	position: relative !important;
+	z-index: 2 !important;
+	color: white;
+	font-size: 4vh !important;
+	font-weight: 900;
+	width: 80vw;
+	padding: 20vh 5vw;
+	margin: 10vh auto;
+	}
+#sigma1 h2{
+	margin: 0;
+	padding: 0;
+	font-size: 3vh;
+	}
+#sigma1 h1{
+	margin: 0;
+	padding: 0;
+	font-size: 9vh;
+	color: #ad974f;
+	text-align: center
+	}
+#sigma1 h3{
+	margin: 20vh 0;
+	padding: 0 0vw;
+	font-size: 3vh !important; 
+	text-align: center;
+	}
+#spacer1{
+	display: none;
+	}
+strong{
+	font-weight: 900;
+	color: white;
+	}
+#sigma2{
+	position: relative;
+	height: 100vh;
+	width: 100vh;
+	left: 15vw;
+	top: -125vh;
+	}
+
+#sigma-img{
+	height: 100vh;
+	width: 100vh !important;
+	opacity: 0.6;
+	}
+	
+#music{
+	width: 90vw;
+	margin: 4vh auto 1vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: solid 4px var(--gold);
+	border-radius: 1rem;
+	}	
+#music h1{
+	color: white;
+	font-size: 2vh;
+	font-weight: 500;
+	margin: 1rem auto 0;
+	}	
+#music1{
+	margin: 2rem auto;
+	}
+
+#certified{
+	display: flex;
+	flex-direction: column-reverse;
+	margin-top: 4vw !important;
+	}	
+#certified1{
+	width:90vw;
+	padding: 0 auto;
+	margin: 4vh auto 0;
+	}
+#certified-img{
+	max-width: 60vw;
+	margin: 0 auto 3vh !important;
+	}
+#certified2{
+	width:80vw;
+	padding: 2vh auto !important;
+	margin: 0 auto;
+	text-align: center;
+	}
+#certified2 h2{
+	color: white !important;
+	font-size: 2.5vh !important;}
+#certified li{
+	color: var(--gold);
+	font-size: 2.5vh;
+	}
+
+#main{
+	display: flex;
+	flex-direction: column;
+	margin: 0 !important; 
+	padding: 0 !important;
+	}
+#main1{
+	width: 85vw !important;
+	margin: 0 auto 5vh !important;
+	padding: 0;
+	text-align: center;
+	}
+#main1 h2{
+	color: white !important;
+	font-size: 3vh !important;
+	}
+#main strong{
+	color: var(--gold);
+	}
+#main h3{
+	font-size: 1.8vh;
+	}
+.sigma-details{
+	display: flex;
+	justify-content: center;
+	border: solid 3px var(--gold);
+	max-width: 85vw !important;
+	font-size: 1.5vh !important;
+	padding: 0 !important;
+	margin: 0 auto;
+	}
+.form-group{
+	margin: 0;
+	padding: 0;}
+.details-all{
+	padding: 0;
+	}
+.btn{
+	background-color: var(--gold);
+	border: solid 0px white;
+	margin: 0 0 3vh 0;
+	font-size: 1.2vh;
+	}
+.btn-success:hover, .btn-success:focus {
+	background-color: #F0DB8D;
+	color: black;
+	}
+
+#spacer2 , #spacer3 {
+	display: none;
+	}
+/*CSS OF CARD AND IT'S DIV....... PROPORTIONS MUST BE PROTECTED*/
+#card{
+	display: none;}
+#card1{
+	max-height: 75vw;
+	overflow: hidden;
+	}
+#card-bg{
+	background-image: url("sigmacard.png");
+	background-repeat: no-repeat;
+	background-size: 90vw auto;
+	position: relative;
+	z-index: 1;
+	width: 90vw;
+	margin: 0 auto;
+	}
+#card-bg-1{
+	max-width: 90vw;
+	visibility: hidden;
+	}
+#card-info{
+	position: relative;
+	z-index: 2;
+	top: -20vh;
+	left: 30vh;
+	}
+.info{
+	font-size: 2vh;
+	color: var(--gold);
+	font-weight: 900;
+	margin: 0 0 1.1vh 0;
+	}
+	
+/* Position The Imagesigma pn card*/
+#c-img{
+	position: relative;
+	z-index: 2;
+	width: 11vh;
+	height: 15vh;
+	top: -36vh;
+	left: 2vh;
+	overflow: hidden;
+	}
+#c-imgout{
+	min-width: 11vh;
+	min-height: 15vh;
+
+}
+
+/*Ending text*/
+#end-text{
+	border-top: solid 1vw var(--gold);
+	width: 80vw;
+	margin: 0 auto;
+	padding: 2vw 3vh;
+	}
+#end-text h2{
+	color: white;
+	font-size: 2vh !important;
+	}
+#end-text h1{
+	color: white;
+	font-size: 2.3vh !important;
+	}
+#end-text a {
+	color: var(--gold);
+	}
+#end-text strong {
+	color: var(--gold);
+	}
+	
+/*footer*/
+footer{
+	background-color: var(--gold);
+	margin: 6vh 0 0 0;
+	}
+#madeby{
+	color: white;
+	font-size: 2vh !important;
+	margin: 0 auto;
+	width: 80vw;
+	padding: 2vh 2vh;
+	text-align: center;
+	}
+#madeby h1{
+	font-size: 2vh;}
+#madeby strong{
+	font-size: 2vh;
+	color: black;
+	font-weight: 900;}
+
+
+
+
+
+} 
+/*Chut dedo koi please*/
