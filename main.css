@@ -349,6 +349,8 @@ footer{
 #sigma{
 	background-color: black;
 	height: 90vh;
+	width: 100vw;
+	overflow: hidden;
 	}
 #sigma1{
 	font-family: serif;
@@ -390,8 +392,8 @@ strong{
 	position: relative;
 	height: 100vh;
 	width: 100vh;
-	left: 15vw;
-	top: -125vh;
+	left: 20vw;
+	top: -130vh;
 	}
 
 #sigma-img{
