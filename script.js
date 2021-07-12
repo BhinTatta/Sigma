@@ -1,20 +1,5 @@
 
 
-
-function printcard(){
-var node = document.getElementById('card-output');
-domtoimage.toPng(node)
-    .then(function (dataUrl) {
-        var img = new Image();
-        img.src = dataUrl;
-        document.body.appendChild(img);
-    })
-    .catch(function (error) {
-        console.error('oops, something went wrong!', error);
-    });
-
-}
-
 //here the value from form
 
 function valuecard(){
@@ -30,6 +15,7 @@ var dateC = document.getElementById('c-date');
 var ruleC = document.getElementById('c-rule');
 var signC = document.getElementById('c-sign');
 var imgC = document.getElementById('c-imgout');
+var cardC = document.getElementById('card');
 //var imgC = document.getElementById('f-img');	
 //console.log(nameC, dateC , ruleC , signC , img);
 	nameC.innerHTML = name;
@@ -37,6 +23,7 @@ var imgC = document.getElementById('c-imgout');
 	ruleC.innerHTML = rule;
 	signC.innerHTML = sign;
 	imgC.style.visibility = "visible";
+	cardC.style.display = "block";
 		}
 
 
@@ -52,12 +39,12 @@ function showPreview(event){
 	}
 
 function download(){
-domtoimage.toBlob(document.getElementById('certified2'))
+domtoimage.toBlob(document.getElementById('card1'))
     .then(function (blob) {
         window.saveAs(blob, 'my-node.png');
     });
     
-var node = document.getElementById('certified2');
+var node = document.getElementById('card1');
 domtoimage.toPng(node)
     .then(function (dataUrl) {
         var img = new Image();
